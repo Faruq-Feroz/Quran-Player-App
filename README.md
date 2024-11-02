@@ -10,5 +10,5 @@ The Quran Player App is a web application designed to provide users with a seaml
 
 ## Technologies Used
 - React
-- SASS
+- SASS <br>
   Author Hassan Faruq
