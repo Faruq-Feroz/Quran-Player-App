@@ -1,0 +1,131 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0f4f1;
+    color: #333;
+}
+
+.container {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+    margin: 0 auto;
+    background: linear-gradient(135deg, #d9ead3 30%, #c9daf8 100%);
+    border-radius: 15px;
+}
+
+.player {
+    background: #ffffff;
+    border: 2px solid #e0e0e0;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+    padding: 15px 0;
+    font-size: 24px;
+    color: #6c757d;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.player audio {
+    width: 100%;
+    height: 45px;
+    margin: 15px 0;
+    border: 1px solid #66bb6a;
+    border-radius: 5px;
+}
+
+.player .buttons {
+    display: flex;
+    justify-content: space-around;
+}
+
+.buttons .icon {
+    color: white;
+    width: 70px;
+    height: 70px;
+    background-color: #66bb6a;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    font-size: 26px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.buttons .icon:hover {
+    background-color: #4caf50;
+    transform: scale(1.1);
+}
+
+.surahs {
+    z-index: 0;
+    height: calc(100vh - 320px);
+    overflow-y: auto;
+    scrollbar-width: thin;
+}
+
+.surahs::-webkit-scrollbar {
+    width: 8px;
+}
+
+.surahs::-webkit-scrollbar-thumb {
+    background-color: #66bb6a;
+    border-radius: 10px;
+}
+
+.surahs > div {
+    color: #333;
+    background-color: #ffffff;
+    border-radius: 7px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    width: 100%;
+    margin-bottom: 15px;
+    padding: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.surahs > div:hover {
+    background-color: #e2f0d9;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #c9daf8;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+footer p {
+    color: #4a4a4a;
+    font-size: 14px;
+}
+
+.accent {
+    color: #f39c12;
+}
+
+.alert {
+    background-color: #f2dede;
+    color: #a94442;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 10px 0;
+    border: 1px solid #ebcccc;
+}
